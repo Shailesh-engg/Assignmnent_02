@@ -1,10 +1,16 @@
+len = int(input("enter a length of list: "))
+lst=[]
+for i in range(len):
+    elements=(input("enter element with space sep: "))
+    tup=tuple(int(item)for item in elements.split())
+    lst.append(tup)
+print(lst)
 
-list = [(2,7),(1,6),(4,8),(5,9),(1,3)]
-for i in range(len(list)):
-    for j in range(len(list)):
-        if list[i][1]<list[j][1]:
-            list[i],list[j]=list[j],list[i]
-print(list)
+for i in range(len):
+    for j in range(len):
+        if lst[i][1]<lst[j][1]:
+            lst[i],lst[j]=lst[j],lst[i]
+print(lst)
 
 
 
